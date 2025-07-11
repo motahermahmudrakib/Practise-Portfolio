@@ -1,51 +1,89 @@
-
-
 .open-sans-normal {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 /* Shared style */
-.text-primary{
-    color: #FD6E0A;
+.text-primary {
+  color: #fd6e0a;
 }
-.dark-2{
-    color: #474747;
+.dark-2 {
+  color: #474747;
 }
-.btn-primary{
-    background-color: #FD6E0A;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 18px 35px;
-    border-radius: 5px;
+.btn-primary {
+  background-color: #fd6e0a;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 18px 35px;
+  border-radius: 5px;
+}
+/* header */
+.header{
+    background-image: url(../images/developer.png), url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
 }
 /* Nav var */
-nav{
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 200px;
+}
+
+.nav-title {
+  font-weight: 800;
+  font-size: 45px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 51px;
+}
+
+nav li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Banner styles  */
+.banner{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 0 200px;
+    margin: 0 35px 0 230px;
+    
+}
+.banner-content{
+    max-width: 580px;
+}
+.banner-greeting {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  color: #474747;
 }
 
-.nav-title{
-    font-weight: 800;
-    font-size: 45px;
+.banner-title {
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 700;
+  color: #181818;
 }
-
-nav ul{
-    display: flex;
-    align-items: center;
-   
+.banner-description {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
-
-nav ul li{
-    list-style: none;
-    margin-right: 51px;
-}
-
-nav li a{
-    text-decoration: none;
-    font-size: 20px;
+.banner-profile-pic {
+width: 584px;
+height: 676px;
+flex-shrink: 0;
 }
